@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+{% include 'AlfredPidjango/head.html' %}
+
+<body>
+
+  {% include 'AlfredPidjango/navbar.html' %}
+  <div class="container">
+    <!-- Responsive grid layout, doesn't jump to full-width -->
+    {% include 'AlfredPidjango/header.html' %}
+
+
+    {% block content %}{% endblock %}
+
+
+  </div>
+  {% include 'AlfredPidjango/footer.html' %}
+  {% include 'AlfredPidjango/javascript.html' %}
+  {% block javascript %}{% endblock %}
+</body>
+
+</html>
